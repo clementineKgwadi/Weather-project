@@ -3,46 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather Project</title>
   </head>
   <body>
-    <header>
-      <form action="">
-        <input type="search" name="search" id="searchCity" autofocus required />
-        <input type="button" value="Search" />
-      </form>
-    </header>
+    <div class="container">
+      <header>
+        <form action="">
+          <input
+            type="search"
+            name="search"
+            id="searchCity"
+            placeholder="Enter a city..."
+            autofocus
+            required
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
 
-    <main>
-      <h1>Pretoria</h1>
+      <main>
+        <div class="weather-container">
+          <h1>Pretoria</h1>
+          <p>
+            11:25 Wednesday <br />
+            Sunny
+          </p>
+        </div>
 
-      <div>
+        <div class="weather-forecast">
+          <div class="weather-details">
+            <span class="weather-icon"> ⛈️</span>
+            <span class="weather-temperature">16 </span>
+            <span class="weather-unit">°C</span>
+          </div>
+
+          <ul>
+            <li>Preciption: <strong>0%</strong></li>
+            <li>Humidity: <strong>32%</strong></li>
+            <li>Wind: <strong>8km/h</strong></li>
+          </ul>
+        </div>
+      </main>
+
+      <footer>
         <p>
-          Sunny <br />
-          11:25 Wednesday
+          <span>
+            This project was coded by
+            <a href="#" target="_blank">Clementine.K</a>, is also
+            <a href="#" target="_blank">open-sourced on GitHub</a> &
+            <a href="#" target="_blank"> hosted on Netlify</a>
+          </span>
         </p>
-      </div>
-
-      <div>
-        <p>
-          <span> ⛈️</span>
-          <span>16°C</span>
-        </p>
-        <ul>
-          <li>Preciption: 0%</li>
-          <li>Humidity: 32%</li>
-          <li>Wind: 8km/h</li>
-        </ul>
-      </div>
-    </main>
-
-    <footer>
-      <p>
-        This project was coded by
-        <a href="#" target="_blank">Clementine Kgwadi,</a> is also
-        <a href="#" target="_blank">open-sourced on GitHub</a> and
-        <a href="#" target="_blank"> hosted on Netlify.</a>
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
